@@ -46,7 +46,8 @@ class UploadController extends Controller
                 ),
                 'collection' => $request->get('collection'),
                 'size' => $file->getSize(),
-                'user_id' => Auth::user()->id,
+                'user_id' => 0,
+                'folder_id' => 0,
             ],
         );
 
